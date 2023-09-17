@@ -2,6 +2,9 @@ package org.trial;
 
 import java.util.ArrayList;
 import java.util.Collection;
+
+import java.util.LinkedList;
+
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -19,6 +22,16 @@ public class Test {
 		System.out.println(values);
 
 	}
+	
+	private void index() {
+		List<Integer> var = new LinkedList<>();
+				
+				var.add(10);
+				var.add(20);
+				var.add(30);
+				var.add(90);
+				System.out.println(var);
+			}
 
 	private void list() {
 		List<Integer> ls = new ArrayList<>();
@@ -31,6 +44,10 @@ public class Test {
 	public static void main(String[] args) {
 		Test fn = new Test();
 		fn.map();
+
+		fn.index();
+
 		fn.list();
+
 	}
 }
